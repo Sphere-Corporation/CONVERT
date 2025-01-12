@@ -1,13 +1,25 @@
-# CONVERT
+# THIS REPOSITORY HAS BECOME READ-ONLY. PLEASE READ BELOW.
+
+## WHY ?
+
+The development of the CONVERT toolset will continue, but it has been combined with the [TOOLCHAIN repository](https://github.com/Sphere-Corporation/TOOLCHAIN.git).
+
+This brings together the full build toolchain for SPHERE-1 executables and ROM images, and the conversion tools formerly hosted here into one repository.
+
+Therefore, this repository has become read-only/archived as at 12-JAN-2025. 
+<hr>
+
+
+### CONVERT
 A set of tools to convert from various SPHERE-1 formats to other SPHERE-1 formats.
 
 These comprise:
   convertEXE:   converts assembled 6800 code to several Sphere-1 compatible formats
   convertROM:   converts a raw binary SPHERE-1 ROM image to an ORB-compatible format
 
-# Installation
+## Installation
 
-## Prerequisites (for the full tool set)
+### Prerequisites (for the full tool set)
  
  * Install `Python 3.x` - versions above 3.9 are currently supported
  * Install "[click](https://palletsprojects.com/p/click/)" by typing `pip3 install click`
@@ -19,7 +31,7 @@ These comprise:
 > **_NOTE:_**  
 _There is a version of `bin2sphere` included in this repo dated October 9th 2023. It is recommended that to ensure the latest software is being used that you follow the installation instructions for `bin2sphere` above._
 
-## convertEXE package
+### convertEXE package
 
  * Clone the repository and ensure that the path is on your search path.
  * Test the installation by typing 
@@ -43,15 +55,15 @@ Converts a Sphere ROM binary file into a form suitable for the SPHERE-Firmware e
  
  If not, check that the repository is cloned correctly and that the location is definitely on your search path.
 
-# convertEXE
-## Formats supported
+## convertEXE
+### Formats supported
 
  * Virtual Cassette for Ben Zotto's Virtual Sphere-1 emulator
  * Javascript for manually embedding into the Virtual Sphere-1 emulator
  * Virtual Cassette "V2" format for automatically embedding into the Virtual Sphere-1 emulator (experimental)
  * .WAV file for storing as a "true' cassette audio file
 
-## How to use
+### How to use
 
 ```
 Usage: convertEXE [OPTIONS]
@@ -79,14 +91,14 @@ Options:
 
   ```
 
-# convertROM
-## Explanation
+## convertROM
+### Explanation
 
 Converts a raw, SPHERE-1 ROM Image into a format that can be used with either:
 - a Project ORB ROM Emulator
 - [Ben Zotto's Virtual SPHERE-1](https://sphere.computer/emulator/)
 
-## How to use
+### How to use
 ```
 Usage: convertROM [OPTIONS]
 
